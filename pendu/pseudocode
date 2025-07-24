@@ -1,0 +1,21 @@
+le nombre de lettres à trouver sera affiché sur la console.
+Les emplacements des lettres à trouver seront gardés par un '_'
+
+choisir un nombre de vie
+mot à trouver = choisi parmi une liste
+afficher autant de '_' que de lettres dans le mot à trouver
+afficher barre de vie
+tant que l'utilisateur a encore des tentatives :
+    demander à l'utilisateur de donner une lettre
+    vérifier que ce que l'utilisateur a donné est une lettre
+    si la lettre donnée est contenue dans le mot :
+        pour chaque emplacements où la lettre donnée correspond :
+            ajouter la lettre au mot
+    sinon :
+        nombre de vie = -1
+
+    si l'utilisateur n'a plus de vie:
+        afficher la défaite
+
+    si toutes les lettres du mot sont trouvées :
+        afficher la victoire
