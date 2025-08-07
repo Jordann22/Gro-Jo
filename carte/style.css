@@ -206,4 +206,19 @@
 .prix-abonnement, .prix-privatisation {
     margin-top: 35px;
     text-align: left;
+
+}
+/* Empilement en colonne sur écrans ≤ 768px (à ajuster si besoin) */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: stretch; /* pour bien étirer chaque bloc */
+  }
+
+  .div-gauche,
+  .div-centre,
+  .div-droite {
+    width: 100%;        /* chaque bloc prend toute la largeur */
+    margin: 10px 0;     /* espacement vertical entre eux */
+  }
 }
