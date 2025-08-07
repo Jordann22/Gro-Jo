@@ -155,7 +155,7 @@
     height: 3px;
     background: #E21168;
     margin-top: 5px;
-    margin-left: 250px;
+    margin-left: 28%;
 }
 .euro {
     font-weight: bold;
@@ -206,19 +206,46 @@
 .prix-abonnement, .prix-privatisation {
     margin-top: 35px;
     text-align: left;
-
 }
 /* Empilement en colonne sur écrans ≤ 768px (à ajuster si besoin) */
 @media screen and (max-width: 768px) {
-  .container {
+  /* Header stacking */
+  .header {
+    display: flex !important;
     flex-direction: column;
-    align-items: stretch; /* pour bien étirer chaque bloc */
+    align-items: stretch;
+  }
+  .header > img,
+  .header > div > .description_titre,
+  .header > div > p {
+    width: 100%;
+    margin: 8px 0;
+  }
+  /* Access jeux section in header */
+  .header > .acces-jeux {
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .header > .acces-jeux > .titrehead,
+  .header > .acces-jeux > .acces-contenu,
+  .header > .acces-jeux > .tarifs-jeu {
+    display: block;
+    width: 100%;
+    margin: 8px 0;
   }
 
+  /* Container stacking blocs principaux */
+  .container {
+    flex-direction: column;
+    align-items: stretch;
+  }
   .div-gauche,
   .div-centre,
   .div-droite {
-    width: 100%;        /* chaque bloc prend toute la largeur */
-    margin: 10px 0;     /* espacement vertical entre eux */
+    width: 100%;
+    margin: 10px 0;
   }
 }
