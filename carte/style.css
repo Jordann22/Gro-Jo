@@ -36,7 +36,7 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 30vw; /* largeur de la ligne */
+  width: 125%; /* largeur de la ligne */
   height: 4px; /* épaisseur de la ligne */
   background: linear-gradient(to right, #E21168, #fff700); /* fuchsia */
   border-radius: 2px;
@@ -52,8 +52,9 @@
   position: absolute;
   bottom: 0;
   top: 10;
-  left: 20%;
-  width: 15vh;
+  margin-left: 0%;
+  transform: translateX(-25%);
+  width: 150px; /* largeur de la ligne */
   height: 2px;
   background: linear-gradient(to right, #E21168, #fff700);
   border-radius: 2px;
@@ -125,7 +126,7 @@
     color: #E21168;
     font-weight: bold;
     font-size: 2rem;
-    margin-right: 200px;
+    
 }
 .contenu {
     display: grid;
@@ -155,7 +156,8 @@
     height: 3px;
     background: #E21168;
     margin-top: 5px;
-    margin-left: 28%;
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 .euro {
     font-weight: bold;
