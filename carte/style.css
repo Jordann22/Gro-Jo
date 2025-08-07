@@ -36,7 +36,7 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 125%; /* largeur de la ligne */
+  width: 500px; /* largeur de la ligne */
   height: 4px; /* épaisseur de la ligne */
   background: linear-gradient(to right, #E21168, #fff700); /* fuchsia */
   border-radius: 2px;
@@ -251,3 +251,4 @@
     margin: 10px 0;
   }
 }
+
