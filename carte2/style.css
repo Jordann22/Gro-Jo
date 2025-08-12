@@ -23,12 +23,12 @@
 }
 
 
-.line {
+.ligne {
   position: relative;
   display: inline-block;
   padding-bottom: 15px;
 }
-.line::after {
+.ligne::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -217,7 +217,7 @@
     text-align: left;
 }
 /* Mobile-first tweaks */
-@media (max-width: 640px) {
+@media (max-width: 1025px) {
   .acces-jeux { margin-left: 0; font-size: 1rem; } /* annule le gros margin-left */  /* présent ici: .acces-jeux { margin-left: 250px; } */ 
   .acces-contenu { width: 95%; } /* évite le débordement (actuellement 120%) *//* réduit la taille de police */
   .contenu { 
