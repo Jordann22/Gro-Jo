@@ -9,6 +9,7 @@
   padding-bottom: 5px;
   color: #E21168;
   width: 100%;
+
 } 
 .titre::after {
   content: "";
@@ -16,25 +17,43 @@
   bottom: 0;
   left: 0;
   right: 0;
-  width: 30vw; /* largeur de la ligne */
-  height: 4px; /* épaisseur de la ligne */
-  background: linear-gradient(to right, #E21168, #fff700); /* fuchsia */
+  width: 31vw;
+  height: 4px;
+  background: linear-gradient(to right, #E21168, #fff700);
   border-radius: 2px;
 }
 
+h1, h2, h3{
+    font-family: 'Racing Sans One', sans-serif;
+    color: #E21168;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+h4, h5, h6 {
+    font-family: 'Racing Sans One', sans-serif;
+    color: #E21168;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
 
 .ligne {
   position: relative;
   display: inline-block;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
+  
 }
 .ligne::after {
   content: "";
   position: absolute;
   bottom: 0;
-  top: 10;
+  top: 25px;
   left: 50px;
-  margin-left: 0%;
+  margin-left: 25%;
   width: 150px; /* largeur de la ligne */
   height: 2px;
   background: linear-gradient(to right, #E21168, #fff700);
@@ -50,7 +69,7 @@
 
 .text {
     font-family: 'Roboto-LightItalic', Bold, sans-serif;
-    font-size: 16px;
+    font-size: 1.1rem;
     line-height: 1.5;
     font-weight: bold;
 }
@@ -59,6 +78,7 @@
     color: #E21168;
     font-weight: bold;
     text-align: center;
+    font-size: 1rem;
 }
 
 .nom {
@@ -188,10 +208,7 @@
   grid-template-columns: 1fr;
 }
 
-.icon_av {
-    width: 75px;
-    height:20px;
-}
+
 .icon_hh {
     width: 75px;
     height: auto;
@@ -216,17 +233,17 @@
     margin-top: 35px;
     text-align: left;
 }
-/* Mobile-first tweaks */
-@media (max-width: 1025px) {
-  .acces-jeux { margin-left: 0; font-size: 1rem; } /* annule le gros margin-left */  /* présent ici: .acces-jeux { margin-left: 250px; } */ 
-  .acces-contenu { width: 95%; } /* évite le débordement (actuellement 120%) *//* réduit la taille de police */
+
+@media (max-width: 750px) {
+  .acces-jeux { margin-left: 0; font-size: 1rem; } 
+  .acces-contenu { width: 95%; } 
   .contenu { 
     display: grid;
-    grid-template-columns: 1fr auto; /* au lieu de 1fr 1fr */
+    grid-template-columns: 1fr auto;
     gap: 12px;
   }
   .table-prix {
-    grid-template-columns: 1fr auto auto; /* 2 colonnes sur mobile */
+    grid-template-columns: 1fr auto auto; 
     column-gap: 8px;
     width: 95%;
   }
