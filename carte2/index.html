@@ -12,27 +12,36 @@
 
 </head>
 <body class="text italic">
-    <header class="grid grid-cols-2 items-start gap-3 p-3 sm:gap-4 sm:p-4 md:grid-cols-3 header">
+    <header class="grid grid-cols-2 items-start gap-3 p-3 sm:gap-4 sm:p-4 lg:grid-cols-3 header">
 
-        <img src="img/logo.svg" alt="The White Rabbit Logo" class="w-43 mt-8 ml-1 col-start-1 sm:w-43 md:w-43">
-        <div class="col-start-2 space-y-1 text-sm sm:text-base">
+        <a href="https://thewhiterabbit.fr"><img src="img/logo.svg" alt="The White Rabbit Logo" class="w-43 mt-6 ml-1 col-start-1 sm:w-43 md:w-40 hover:scale-110 transition-transform duration-500"></a>
+        <div class="col-start-2 text-sm sm:text-base ml-0">
             <p class="description_titre" style="color: #E21168; font-size: 1.5rem;"><br>Des jeux, un bar, <br> <span style="color: #010099;">Pour toutes et tous ! </span></p>
 
-            <p style="text-align: left;" class="flex mt-6 gap-1"> <img src="img/pin.png" alt="pin" style="height: 20px;" class=""> <a href="https://maps.app.goo.gl/swhq5CfmZZA6jjEn6" style="color: #010099;">19<sup>3/4</sup> cours Lafayette</a> </p>
-            <p class="flex gap-1 mt-1"> <img src="img/pc.png" alt="pc" style="height: 20px; transform: translate(0, 3px);" class=""> <a href="https://thewhiterabbit.fr" style="color: #E21168;">thewhiterabbit.fr</a></p>
+            <p style="text-align: left;" class="flex mt-6 gap-1"> <img src="img/pin.png" alt="pin" style="height: 20px;" class=""> <a href="https://maps.app.goo.gl/swhq5CfmZZA6jjEn6" style="color: #010099;" class="hover:underline hover:scale-105 transition-transform duration-200">19<sup>3/4</sup> cours Lafayette</a> </p>
+            <p class="flex gap-1 mt-1"> <img src="img/pc.png" alt="pc" style="height: 20px; transform: translate(0, 3px);" class=""> <a href="https://thewhiterabbit.fr" style="color: #E21168;" class="hover:underline hover:scale-105 transition-transform duration-200">thewhiterabbit.fr</a></p>
         </div>
         <div class="acces-jeux mt-3 col-span-2 md:col-span-1">
             <h2 class="titrehead">Accès aux jeux</h2>
             <div class="contenu">
             
                 <div class="acces-contenu ">
-                    <div class="flex flex-wrap"><img src="img/pique.png" alt="pique" class="mt-1 h-5">Accès à plus de <span style="color: #E21168;" class="ml-1 mr-1">400</span> jeux.</div>
+                    <div class="flex items-start">
+                        <img src="img/pique.png" alt="pique" class="h-5 mt-1 float-left">
+                        <span class="inline-block">
+                            Accès à plus de <span style="color: #E21168;" class="ml-1 mr-1">400</span> jeux.
+                        </span>
+                    </div>              
                     <div class="flex"><img src="img/coeur.png" alt="pique" class="mt-1 h-5">Conseils, Installation et explications des jeux.</div>
-                    <div class="flex flex-wrap">
-                        <div class="line"><img src="img/trefle.png" alt="trèfle" class="mt-1 h-5"></div>
-                        <div>Cafés, Infusions et sirops</div>
-                        <div class="line"><img src="img/a_volonté.png" alt="a_volonté" class="icon_av ml-1 mr-1" style="width: 35px;"> </div>
-                        <div class="line">, le reste à prix cassés !</div>
+                    <div class="flex items-start">
+                        <img src="img/trefle.png" alt="trèfle" class="float-left h-5 mt-1">
+                        <span class="inline-block">
+                            Cafés, Infusions et sirops
+                        
+                        <img src="img/a_volonté.png" alt="a_volonté" class="inline-block h-5 mx-1">
+                        
+                            , le reste à prix cassés !
+                        </span>
                     </div>
                 </div>
 
@@ -46,7 +55,7 @@
 
                         </div>
                     </div>
-                    <div style="transform: translate(0, -15px);">Plafonné à <span style="color: #E21168;">12€</span> par visite. <strong style="color: #E21168;">*</strong></div>
+                    <div style="transform: translate(0, -15px);" class="flex-wrap">Plafonné à <span style="color: #E21168;">12€</span> par visite. <strong style="color: #E21168;">*</strong></div>
                     <div class="description" style="transform: translate(0, -20px);">(oui, à partir de la 3e heure, la facturation s'arrête !)</div>
                 </div>
             </div>
@@ -70,8 +79,10 @@
                     <div class="prix col-start-3">3</div>
                     <div class="prix col-start-4">2</div>
 
-                    <div class="nom ligne col-span-4">Limonade artisanale</div>
+                    <div class="nom col-span-4">Limonade artisanale</div>
+                    <div class="description col-start-1 ligne"></div>
 
+                    <div class="col-start-4"></div>
                     <div class="quantité col-start-4">33cl</div>
 
                     <div class="nom col-start-1">Ginger Beer</div>
@@ -306,12 +317,12 @@
             <h1 class="titre"><strong>Boissons chaudes</strong></h1>
             <div class="table-prix">
                 <div class="nom col-start-1">Cafés</div>
-                <div class="prix col-start-4"><img src="img/a_volonté.png" alt="a_volonté" class="icon_av" style="width: 30px;"></div>
+                <div class="prix col-start-4"><img src="img/a_volonté.png" alt="a_volonté" class="icon_av" style="width: 35px;"></div>
 
                 <div class="description col-start-1" style="font-weight: bolder; font-size: 12px;">Espresso / Allongé / Café au lait / Décaféiné</div>
 
                 <div class="nom col-start-1">Infusions</div>
-                <div class="prix col-start-4"><img src="img/a_volonté.png" alt="a_volonté" class="icon_av" style="width: 30px;"></div>
+                <div class="prix col-start-4"><img src="img/a_volonté.png" alt="a_volonté" class="icon_av" style="width: 35px;"></div>
 
                 <div class="description col-start-1" style="font-weight: bolder; font-size: 12px;">Thés verts, noirs, tisanes ou rooïbos</div>
 
@@ -363,8 +374,10 @@
 
                 <div class="description col-start-1">Tortilla, Salade, Chips, Oignons grillés, Epices</div>
 
-                <div class="type col-start-1">Poulet mariné - Bacon grillé - cornichons, poivrons</div>
-                <div class="type col-start-1">Saumon - concombres, crème, citron, ail, aneth, ciboulette</div>
+                <ul class="list-disc list-inside col-start-1 ">
+                    <div class="type col-start-1"><li>Poulet mariné - Bacon grillé - cornichons, poivrons</li></div>
+                    <div class="type col-start-1"><li>Saumon - concombres, crème, citron, ail, aneth, ciboulette</li></div>
+                </ul>
             </div>
 
             <h1 class="titre"><strong>Goûters et desserts</strong></h1>
@@ -387,14 +400,14 @@
 
         <div class="mt-6 ml-5 droite md:mt-12 md:col-start-auto" style="margin-top: 50px;">
             <div class="abonnement">
-                <div class="col-start-1"><img src="img/parchemin.png" alt="icon" class="icon"></div>
+                <div class="col-start-1"><img src="img/parchemin.png" alt="icon" class="icon hover:scale-110 transition-transform duration-200"></div>
                 <div class="col-start-2">
                     <h1><strong style="color: #010099;">Abonnement</strong></h1>
                     <p style="color: #000000; font-weight: lighter; font-size: small;">Pour 6 mois. Août offert.</p>
                     <ul style="color: #010099;">
-                        <li class="flex flex-wrap"><img src="img/carreau.png" alt="icon" class="mt-1 h-5">Accès aux jeux à <span style="color: #E21168;" class="ml-1 mr-1">2<sup>€</sup></span>/h, max <span style="color: #E21168;" class="ml-1 mr-1">6<sup>€</sup></span>/visite.</li>
-                        <li class="flex"><img src="img/pique.png" alt="icon" class="mt-1 h-5">Table garantie, réservation gratuite, accès à la "dark card" et aux événements exclusifs</li>
-                        <li class="flex"><img src="img/coeur.png" alt="icon" class="mt-1 h-5">Réduction dans les boutiques partenaire</li>
+                    <li class="flex items-start"><img src="img/carreau.png" alt="icon" class="h-5 mt-1 float-left"><span class="inline-block">Accès aux jeux à <span style="color: #E21168;">2<sup>€</sup></span>/h, max <span style="color: #E21168;">6<sup>€</sup></span>/visite.</span></li>                        
+                    <li class="flex"><img src="img/pique.png" alt="icon" class="mt-1 h-5">Table garantie, réservation gratuite, accès à la "dark card" et aux événements exclusifs</li>
+                    <li class="flex"><img src="img/coeur.png" alt="icon" class="mt-1 h-5">Réduction dans les boutiques partenaire</li>
                     </ul>
                 </div>
                 <div class="col-start-3">
@@ -404,7 +417,7 @@
             </div>
 
             <div class="etudiant">
-                <div><img src="img/etudiant.png" alt="icon" class="icon"></div>
+                <div><img src="img/etudiant.png" alt="icon" class="icon hover:scale-110 transition-transform duration-200"></div>
                 <div>
                     <h1><strong style="color: #010099;">Offre étudiant.es</strong></h1>
                     <p style="color: #000000; font-weight: lighter; font-size: small;">Sur présentation d'un justificatif à chaques commande, limité à une boisson par détenteur par commande.</p>
@@ -416,7 +429,7 @@
             </div>
 
             <div class="privatisation">
-                <div><img src="img/diamant.png" alt="icon" class="icon"></div>
+                <div><img src="img/diamant.png" alt="icon" class="icon hover:scale-110 transition-transform duration-200"></div>
                 <div>
                     <h1><strong style="color: #010099;">Privatisation</strong></h1>
                     <p style="color: #000000; font-weight: lighter; font-size: small;">Sur devis et acompte 7j à l'avance.</p>
@@ -432,7 +445,7 @@
             </div>
 
             <div class="pas-envie">
-                <div><img src="img/cafe.png" alt="icon" class="icon"></div>
+                <div><img src="img/cafe.png" alt="icon" class="icon hover:scale-110 transition-transform duration-200"></div>
                 <div>
                     <h1><strong style="color: #010099;">Pas envie de jouer ?</strong></h1>
                     <p style="color: #000000; font-weight: lighter; font-size: small;">Même si on te juge très très fort, aucun problème pour vous servir malgré tout !</p>
