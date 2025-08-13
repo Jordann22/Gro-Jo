@@ -9,7 +9,7 @@
   padding-bottom: 5px;
   color: #E21168;
   width: 100%;
-
+  font-style: normal;
 } 
 .titre::after {
   content: "";
@@ -76,9 +76,10 @@ h4, h5, h6 {
 
 .prix {
     color: #E21168;
-    font-weight: bold;
+    font-weight: bolder;
     text-align: center;
     font-size: 1rem;
+    font-style: normal;
 }
 
 .nom {
@@ -91,6 +92,7 @@ h4, h5, h6 {
     color: #000000;
     font-weight: bold;
     text-align: center;
+    font-style: normal;
 }
 
 .type {
@@ -155,7 +157,8 @@ h4, h5, h6 {
 .description_titre {
     font-size: 19px;
     color: #000000;
-    margin-left: px;
+    font-weight: bolder;
+    font-style: normal;
     text-align: left;
 }
 
@@ -171,11 +174,12 @@ h4, h5, h6 {
 }
 
 .euro {
-    font-weight: bold;
+    font-weight: bolder;
     color: #E21168;
     font-size: 3rem;
     display: grid;
     grid-template-columns: 0.1fr 0.1fr;
+    font-style: normal;
 }
 .euro span {
     font-size: 2rem;
